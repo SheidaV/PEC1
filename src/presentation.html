@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospitalet de Llobregat</title>
+    <!-- Leaflet's CSS & Javascript source-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!-- My own CSS & Javascript files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>PEC1. Desarrollo de una web</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="blank">Inicio</a></li>
+                    <li><a href="category.html">Categoría</a></li>
+                    <li><a href="presentation.html">Presentación</a></li>
+                    <li><a href="links.html">Enlaces</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <article>
+            <h2>Conoce Hospitalet de Llobregat</h2>
+            <p>
+                La ciudad de L'Hospitalet tiene 12,49 kilómetros cuadrados, está situada en la llanura litoral y
+                pertenece a la comarca catalana del Barcelonès, entre los municipios de Barcelona, Esplugues, Cornellà
+                y El Prat, en el margen izquierdo del río Llobregat.
+            </p>
+            <figure>
+                <div id="map"></div>
+                <figcaption>Mapa de la ciudad y ciudades fronteras.
+                </figcaption>
+            </figure>
+            <p>
+                L'Hospitalet de Llobregat es la ciudad con mayor densidad de población de toda la Unión Europea, según
+                un estudio del Eurostat publicado en 2022. Segun la base de datos, L'Hospitalet de Llobregat sigue
+                siendo de largo el
+                municipio más poblado y el más denso de toda Cataluña. Mide apenas 12 kilómetros cuadrados en los que
+                hay hasta 265.444 personas. Es decir, la densidad de población es de 21.406 por kilómetro cuadrado.
+            </p>
+            <p>
+                De los ultimos eventos de esta ciudad, destacamos la Procesión del Viernes Santo el pasado 21 de Abril.
+            </p>
+
+            <figure>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uhYskOE_jZU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="video-frame"></iframe>
+                </div>
+                <figcaption>Viernes Santo Procesión 2023 en Hospitalet de Llobregat</figcaption>
+            </figure>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="presentation.html">Presentación</a></li>
+                <li><a href="details_culture.html">Centros culturales</a></li>
+                <li><a href="details_tourism.html">Lugares de interes</a></li>
+                <li><a href="details_history.html">Historia</a></li>
+                <li><a href="links.html">Fuentes</a></li>
+            </ul>
+            <p>UOC 2023 - Sheida Alfaro</p>
+        </div>
+    </footer>
+</body>
+
+</html>

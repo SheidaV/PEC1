@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitalet de Llobregat</title>
+    <!-- Leaflet's CSS & Javascript source-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!-- My own CSS & Javascript files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>PEC1. Desarrollo de una web</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="blank">Inicio</a></li>
+                    <li><a href="category.html">Categoría</a></li>
+                    <li><a href="presentation.html">Presentación</a></li>
+                    <li><a href="links.html">Enlaces</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <article>
+            <h2>Centros culturales</h2>
+
+            <p>En relación con la cultura, hay diversos lugares de ocio para los visitantes, los mas visitados son los
+                siguientes tres centros.
+            </p>
+            <h3 id="site7">Auditorio Barradas</h3>
+            <p>
+                El Auditorio Barradas es el espacio de la ciudad que acoge la temporada profesional de música de pequeño
+                y medio formato. El Auditori incorpora a la programación el apoyo a la producción local y otras
+                propuestas emergentes.
+            </p>
+            <p>
+                El Auditorio Barradas, situado en la Rambla Just Oliveras de L'Hospitalet, es uno de los equipamientos
+                de proximidad más céntricos de la ciudad.
+            </p>
+            <p>
+                El auditorio está especializado en programación musical y mantiene una oferta de dos temporadas estables
+                al año, donde se combinan distintos estilos que van desde la canción de autor hasta el jazz. Además
+                ofrece una variada programación de actividades durante todo el año que incluye teatro, danza,
+                audiovisuales, ciclos de conferencias y otras actividades escénicas, culturales, sociales y
+                divulgativas.
+            </p>
+            <figure>
+                <img src="img/_barradas.jpg" alt="Fachada auditorio barradas">
+                <figcaption>Exterior del Auditorio barradas</figcaption>
+            </figure>
+            <h3 id="site8">Escuela Municipal de Música - Centro de las Artes</h3>
+            <p>
+                La Escuela Municipal de Música-Centro de las Artes es un nuevo modelo de oferta pública de educación
+                artística con la voluntad de proyectar un espacio donde la formación, la creación, la práctica y la
+                difusión artística interactúen en el territorio.
+            </p>
+            <p>
+                La <abbr title="Escuela Municipal de Música Centro de las Artes">EMMCA</abbr> tiene como misión
+                garantizar
+                la participación de
+                todos los ciudadanos en la producción y en la recepción y convertirse en un instrumento de primer orden
+                para democratizar el acceso a la cultura.
+            </p>
+            <p>
+                El Centro de las Artes debe responder a los siguientes objetivos:
+            </p>
+            <ol>
+                <li>Articular una oferta global y diversa de educación artística para la ciudad dirigida a todos los
+                    ciudadanos, de todas las edades, de todos los sectores sociales e intereses estéticos.</li>
+                <li>Entender que la acción del Centro de las Artes debe extenderse a los campos de la formación, la
+                    práctica, la creación, la producción y la difusión artística.</li>
+                <li>Facilitar y potenciar el trabajo articulado de los profesionales y aficionados del sector artístico.
+                </li>
+                <li>Crear un entorno que fomente los intereses, demandas y necesidades de arte de los ciudadanos para,
+                    después, dar respuestas a estas demandas. </li>
+            </ol>
+
+            <p>Destacamos un proyecto encantador activo desde el 2006, el cual apuesta por democratizar el acceso a la
+                práctica artística y por fomentar mezcla de ciudadanos con bagajes diversos en las escuelas publicas.
+                Son unos proyectos que permiten fomentar la práctica artística de aquellos sectores de la población
+                alejados tradicionalmente de estas prácticas culturales. También desarrollar la atención, la
+                concentración, la disciplina y la sensibilidad del alumnado.
+
+                Con este trabajo cooperativo, del equipo directivo de las escuelas implicadas y la EMCMA se da la
+                oportunidad a los alumnos de conocer nuevos lenguajes artísticos. Actualmente existen proyectos de
+                orquesta, banda, teatro y danza.</p>
+            <figure>
+                <img src="img/_emmca.jpg" alt="Fachada Escuela Municipal de Música Centro de las Artes">
+                <figcaption>Exterior de la <abbr title="Escuela Municipal de Música Centro de las Artes">EMMCA</abbr>
+                </figcaption>
+            </figure>
+            <h3 id="site9">Teatre Joventut</h3>
+            <p>
+                El Teatre Joventut es el espacio municipal que acoge la temporada profesional de teatro, música y danza
+                así como otras actividades de artes escénicas. Dispone de dos salas especializadas según el contenido y
+                formato del espectáculo que se programa.
+            </p>
+            <p>
+                El cine Joventut era uno de tantos cines de L'Hospitalet, como la Alhambra en Pubilla Casas, el Victoria
+                en Santa Eulàlia, el Stadium en Sant Josep, el Oliveras en el Centro... El Joventut era el cine de la
+                Torrassa. La gente mayor tiene buenos recuerdos de aquellas épocas, de las películas, de los actores y
+                las actrices, de las largas sesiones continuas, a oscuras, con los ojos concentrados en la inmensa
+                pantalla. El cine -junto al fútbol- era uno de los mayores espectáculos de masas, el séptimo arte. Pero
+                vino la invasión de los Seat 600 y los fines de semana las carreteras se llenaban y las colas de los
+                cines se acortaban. Pronto la televisión entabló una fuerte competencia en los cines: aún no se pagaba
+                por ver. Y los cines empezaron un fuerte bajón. Se decía que la televisión mataría al cine. Unas salas
+                tuvieron que cerrar, otras se modernizaron con enormes pantallas de cinescope, otras se volvieron salas
+                especializadas «de arte y ensayo», unas cuantas más se fueron transformando en multicines... Que queda,
+                ¿de esos cines de barrio, de esas colas, de esas grandes salas a oscuras, de esas superpantallas, de las
+                películas en technicolor?
+            </p>
+            <p>
+                El cine Joventut se quedó viejo: es de los que cerraron, Un día las carteleras ya no anunciaron ninguna
+                película y las taquillas ya no abrieron la ventanilla para vender entradas. Sólo quedaba el rótulo de
+                CINE JUVENTUD presidiendo una fachada empolvada. Y la plaza de la calle con el mismo nombre que el cine.
+                Un buen día el Ayuntamiento decidió comprarlo y transformarlo en teatro. El viejo cine Joventut,
+                renovado y adecuado debidamente, se convertiría en el teatro del municipio de L'Hospitalet. El mismo
+                edificio, el mismo estilo arquitectónico que había creado Ramon Puig i Gairalt, pero como nuevo de
+                trinca. Ahora será un teatro. con escenario en lugar de pantalla, con camerinos, foco, sonoridad...
+                todas las condiciones técnicas que hoy en día se exigen para realizar unas representaciones de la mejor
+                calidad. El Joventut, un teatro. de veras uno de los principales equipamientos culturales de
+                L'Hospitalet.
+            </p>
+            <p>
+                El 8 de mayo de 1991 el nuevo TEATRO JUVENTUD levantó por primera vez el telón. Fue con el estreno de la
+                obra El cantaro roto, a cargo de una compañía de Madrid. Desde entonces se han representado muchas y muy
+                variadas obras de teatro, han sido cientos los actores y actrices que han pisado su escenario, y miles
+                de espectadores los que han disfrutado.
+            </p>
+            <figure>
+                <img src="img/_juventut.jpg" alt="Fachada Teatre Juventut">
+                <figcaption>Exterior del Teatre Juventut</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="presentation.html">Presentación</a></li>
+                <li><a href="details_culture.html">Centros culturales</a></li>
+                <li><a href="details_tourism.html">Lugares de interes</a></li>
+                <li><a href="details_history.html">Historia</a></li>
+                <li><a href="links.html">Fuentes</a></li>
+            </ul>
+            <p>UOC 2023 - Sheida Alfaro</p>
+        </div>
+    </footer>
+</body>
+
+</html>

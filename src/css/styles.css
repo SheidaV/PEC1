@@ -1,0 +1,298 @@
+/* Set up variables*/
+:root {
+  --text-color: rgb(75, 75, 75);
+  --light-color: rgb(255, 255, 255);
+  --background-color: #FFF2F2;
+  --background-color2: #9d8bfae2;
+  --background-color3: #d8d1ffe2;
+  --contrast-color: #4399e5;
+  --secondary-contrast-color: #819eed;
+  --note-color: hsla(250, 100%, 95%, 0.886);
+  --note-contrast-color: hsla(250, 100%, 60%, 0.886);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/* General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+  background-color: var(--background-color);
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Contenedores */
+header {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 10px;
+  height: 15%;
+}
+footer {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  color: var(--secondary-contrast-color);
+  text-align: center;
+  margin-top: 10px;
+  background-color: var(--background-color3);
+}
+main {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+main p, main li {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Tittles */
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  color: var(--contrast-color);
+}
+h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: var(--secondary-contrast-color);
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--background-color2);
+  padding: 20px 0;
+}
+
+/* Common style*/
+ol li::marker {
+  color: var(--background-color2);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main a {
+  color: var(--secondary-contrast-color);
+}
+
+/* Multimedia */
+img {
+  display: block;
+  height: auto;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.video {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.video-frame {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video::before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+figure {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Menú de navegación principal*/
+nav {
+  flex: 100%;
+  display: flex;
+  height: 10%;
+  font-size: 1rem;
+}
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 2.4rem;
+  line-height: 1.5;
+  text-decoration: none;
+  color: var(--text-color);
+}
+nav.nav {
+  display: block;
+  text-align: center;
+}
+nav.nav ul {
+  margin-top: 1rem;
+  list-style-type: none;
+  padding-left: initial;
+}
+nav.nav ul li {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+nav.nav ul li a:hover {
+  border: none;
+  color: var(--contrast-color);
+}
+
+/* Menú de footer */
+
+footer p {
+  font-size: x-small;
+  padding: 10px 0;
+}
+
+footer a {
+  color: var(--background-color2);
+}
+footer a:hover {
+  color: var(--contrast-color);
+  border: none;
+}
+
+footer ul {
+  padding: 5px 0 0 0;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer li:after {
+  content: "|";
+  margin: 0 10px;
+}
+footer li:last-child:after {
+	display: none;
+}
+
+@media (768px < width) {
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+
+  nav a, nav span {
+    display: inline-block;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figure img {
+    max-width: 75%;
+    height: auto;
+  }
+}
+
+/* Specific*/
+figcaption {
+  text-align: center;
+}
+
+#map { 
+  height: 180px; 
+  background-color: black;
+  width: 100hw;
+}
+
+.note {
+  background-color: var(--note-color);
+  border-left: 6px solid var(--note-contrast-color);
+}
+
+.note p {
+  padding-left: 1%;
+  font-size: x-small;
+}
+
+.list a{
+  color: var(--text-color);
+}
+
+dd {
+  padding-left: 2rem;
+}
+dd a {
+  margin-top: -1rem;
+}
+
+dd a:hover{
+    color: var(--contrast-color);
+}
