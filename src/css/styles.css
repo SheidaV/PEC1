@@ -122,6 +122,10 @@ a {
   color: inherit;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 main a {
   color: var(--secondary-contrast-color);
 }
