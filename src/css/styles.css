@@ -269,7 +269,7 @@ figcaption {
 #map { 
   height: 180px; 
   background-color: black;
-  width: 100hw;
+  width: auto;
 }
 
 .note {
