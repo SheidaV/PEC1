@@ -96,7 +96,6 @@ main p, main li, dl {
 /* Tittles */
 h1 {
   font-size: 3.2rem;
-  text-align: center;
   color: var(--contrast-color);
 }
 h2 {
@@ -113,14 +112,20 @@ h3 {
 }
 
 .logo {
-  text-align: center;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+
 }
 .logo img {
   display: inline-block;
-  padding: 0 0.25rem;
+  margin-right: 0.3em;
+}
+
+footer .logo img {
+  width:16%;
+  height:5%;
 }
 
 /* Common style*/
@@ -164,7 +169,14 @@ img {
   width: 100%;
   height: 100%;
   border: 0;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out; /* Define la transición */
 }
+
+.video-frame:hover {
+  opacity: 1; /* Establece la opacidad al pasar el mouse por encima */
+}
+
 .video::before {
   display: block;
   content: "";
@@ -173,6 +185,12 @@ img {
 figure {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.img_css {
+  background: url(../img/L\'Hospitalet_de_Llobregat.jpg) no-repeat center;
+  height: 200px;
+  background-size: contain;
 }
 
 /* Menú de navegación principal*/
@@ -274,6 +292,28 @@ footer li:last-child:after {
     max-width: 75%;
     height: auto;
   }
+  .img_css {
+    width: 800px;
+    height: 300px;
+  }
+}
+@media (992px < width) {
+  .img_css {
+    width: 1000px;
+    height: 400px;
+  }
+}
+@media ( 1200px < width) {
+  .img_css {
+    width: 1300px;
+    height: 500px;
+  }
+}
+@media (1400px < width) {
+  .img_css {
+    width: 1500px;
+    height: 600px;
+  }
 }
 
 /* Specific*/
@@ -286,10 +326,16 @@ figcaption {
   background-color: black;
   width: auto;
 }
+.map-container {
+  position: relative;
+  overflow: hidden;
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
+}
 
 .note {
   background-color: var(--note-color);
   border-left: 6px solid var(--note-contrast-color);
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-bottom-right both;
 }
 
 .note p {
@@ -307,4 +353,27 @@ dd {
 
 dd a:hover{
     color: var(--contrast-color);
+}
+
+
+
+@keyframes square-in-hesitate {
+  0% {
+      clip-path: inset(100% 100% 100% 100%);
+  }
+  40% {
+      clip-path: inset(33% 33% 33% 33%);
+  }
+  100% {
+      clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes square-in-bottom-right {
+  from {
+      clip-path: inset(0 100% 100% 0);
+  }
+  to {
+      clip-path: inset(0 0 0 0);
+  }
 }
