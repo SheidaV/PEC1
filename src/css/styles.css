@@ -35,7 +35,7 @@ main {
 /* Contenedores */
 header {
   padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   margin-bottom: 10px;
   height: 15%;
 }
@@ -49,8 +49,8 @@ footer {
   background-color: var(--background-color3);
 }
 main {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2.5rem;
 }
 
 main p, main li, dl {
@@ -202,7 +202,7 @@ nav {
 }
 nav a, nav span {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 2.4rem;
   line-height: 1.5;
   text-decoration: none;
