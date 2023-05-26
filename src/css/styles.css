@@ -95,11 +95,11 @@ main p, main li, dl {
 
 /* Tittles */
 h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: var(--contrast-color);
 }
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--secondary-contrast-color);
   padding-bottom: 20px;
@@ -121,8 +121,8 @@ h3 {
 .logo img {
   display: inline-block;
   margin-right: 0.3em;
-  max-width: 100%;
-  height: auto;
+  width:70;
+  height:35;
 }
 
 footer .logo img {
@@ -207,11 +207,10 @@ nav {
   flex: 100%;
   display: flex;
   height: 10%;
-  font-size: 1rem;
 }
 nav a, nav span {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   height: 2.4rem;
   line-height: 1.5;
   text-decoration: none;
