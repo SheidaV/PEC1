@@ -3,11 +3,11 @@
   --text-color: rgb(75, 75, 75);
   --light-color: rgb(255, 255, 255);
   --background-color: #FFF2F2;
-  --background-color2: #9d8bfae2;
-  --background-color3: #d8d1ffe2;
+  --background-color2: rgba(128, 111, 214, 0.886);
+  --background-color3: rgba(216,209,255,0.886);
   --contrast-color: #4399e5;
-  --secondary-contrast-color: #819eed;
-  --note-color: hsla(250, 100%, 95%, 0.886);
+  --secondary-contrast-color: rgb(101, 124, 187);
+  --note-color: rgba(237, 234, 252, 0.886);
   --note-contrast-color: hsla(250, 100%, 60%, 0.886);
 }
 * {
