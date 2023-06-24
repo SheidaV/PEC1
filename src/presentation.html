@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Esta pagina un mapa interactivo y un video de una reciente fiesta tipica en la ciudad L'Hospitalet de Llobregat.">
+        content="Esta página contiene un mapa interactivo y un video de una reciente fiesta típica en la ciudad L'Hospitalet de Llobregat.">
 
     <title>Hospitalet de Llobregat</title>
     <!-- Leaflet's CSS & Javascript source-->
@@ -44,39 +44,51 @@
             <h2>Conoce Hospitalet de Llobregat</h2>
             <p>
                 La ciudad de L'Hospitalet tiene 12,49 kilómetros cuadrados, está situada en la llanura litoral y
-                pertenece a la comarca catalana del Barcelonès, entre los municipios de Barcelona, Esplugues, Cornellà
-                y El Prat, en el margen izquierdo del río Llobregat.
+                pertenece a la comarca catalana del Barcelonès, entre los municipios de Barcelona, Esplugues, Cornellà y
+                El Prat, en el margen izquierdo del río Llobregat.
             </p>
             <div class="map-container">
                 <div id="map"></div>
-                <figcaption>Mapa de la ciudad y ciudades fronteras.
-                </figcaption>
+                <figcaption>Mapa de la ciudad y ciudades fronteras.</figcaption>
             </div>
             <p>
                 L'Hospitalet de Llobregat es la ciudad con mayor densidad de población de toda la Unión Europea, según
-                un estudio del Eurostat publicado en 2022. Segun la base de datos, L'Hospitalet de Llobregat sigue
-                siendo de largo el
-                municipio más poblado y el más denso de toda Cataluña. Mide apenas 12 kilómetros cuadrados en los que
-                hay hasta 265.444 personas. Es decir, la densidad de población es de 21.406 por kilómetro cuadrado.
+                un estudio del Eurostat publicado en 2022. Según la base de datos, L'Hospitalet de Llobregat sigue
+                siendo de largo el municipio más poblado y el más denso de toda Cataluña. Mide apenas 12 kilómetros
+                cuadrados en los que hay hasta 265.444 personas. Es decir, la densidad de población es de 21.406 por
+                kilómetro cuadrado.
             </p>
             <p>
-                De los ultimos eventos de esta ciudad, destacamos la Procesión del Viernes Santo el pasado 21 de Abril.
+                De los últimos eventos de esta ciudad, destacamos la Procesión del Viernes Santo el pasado 21 de Abril.
             </p>
 
-            <figure>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uhYskOE_jZU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-                <figcaption>Viernes Santo Procesión 2023 en Hospitalet de Llobregat</figcaption>
-            </figure>
-            <figure id="bandera">
-                <img class="anim" src="img/Bandera_Hospitalet.svg" alt="Bandera de Hospitalet de Llobregat" width="500"
-                    height="400">
+            <figure id="bandera" style="overflow: hidden;">
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="500" height="400"
+                    id="svg2" version="1.0">
+                    <defs id="defs4" />
+
+                    <rect x="0" y="0" width="250" height="343.75" class="vibracion" style="fill:#ffffff;" />
+                    <path d="M0 0L250 250M250 0L0 250" stroke="#da121a" class="vibracion" stroke-width="26.67" />
+
+                    <rect x="250" y="0" width="250" height="31.25" class="vibracion" style="fill:#fcdd09;" />
+                    <rect x="250" y="31.25" width="250" height="31.25" class="vibracion" style="fill:#da121a;" />
+                    <rect x="250" y="62.5" width="250" height="31.25" class="vibracion" style="fill:#fcdd09;" />
+                    <rect x="250" y="93.75" width="250" height="31.25" class="vibracion" style="fill:#da121a;" />
+                    <rect x="250" y="125" width="250" height="31.25" class="vibracion" style="fill:#fcdd09;" />
+                    <rect x="250" y="156.25" width="250" height="31.25" class="vibracion" style="fill:#da121a;" />
+                    <rect x="250" y="187.5" width="250" height="31.25" class="vibracion" style="fill:#fcdd09;" />
+                    <rect x="250" y="218.75" width="250" height="31.25" class="vibracion" style="fill:#da121a;" />
+                    <rect x="250" y="250" width="250" height="31.25" class="vibracion" style="fill:#fcdd09;" />
+
+
+                </svg>
                 <figcaption>Bandera de Hospitalet de Llobregat</figcaption>
             </figure>
+            <figure>
+                <div class="alcaldessa"></div>
+                <figcaption>Alcaldessa reelegida en Hospitalet de Llobregat</figcaption>
+            </figure>
+
         </article>
     </main>
 
@@ -85,9 +97,9 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="presentation.html">Presentación</a></li>
-                <li><a href="category.html">Categorias</a></li>
+                <li><a href="category.html">Categorías</a></li>
                 <li><a href="details_culture.html">Centros culturales</a></li>
-                <li><a href="details_tourism.html">Lugares de interes</a></li>
+                <li><a href="details_tourism.html">Lugares de interés</a></li>
                 <li><a href="details_history.html">Historia</a></li>
                 <li><a href="links.html">Enlaces</a></li>
             </ul>
