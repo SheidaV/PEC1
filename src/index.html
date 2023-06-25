@@ -11,14 +11,18 @@
     <!-- My own CSS & Javascript files -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script type="module" src="js/app.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html"><img src="img/logo.svg" alt="Logo" title="L'H">Sitio L'Hospitalet de
-                        Llobregat</a></h1>
+                <h1>
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="Logo" title="L'H">Sitio L'Hospitalet de Llobregat
+                    </a>
+                </h1>
             </div>
             <nav class="nav">
                 <ul>
@@ -49,6 +53,9 @@
                     pagina <a href="links.html">fuentes</a> .</p>
             </div>
             <img class="polygon" src="img/dibujoHospitalet.webp" width="350" alt="Dibujo digital de la ciudad">
+            <img class="lazy polygon" src="img/placeholder-image.svg" data-src="img/dibujoHospitalet.webp"
+                data-srcset="img/dibujoHospitalet.webp 2x, img/dibujoHospitalet.webp 1x" width="350"
+                alt="Dibujo digital de la ciudad">
             <figcaption>Dibujo digital de la ciudad</figcaption>
 
         </article>

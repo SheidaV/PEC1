@@ -205,12 +205,6 @@ picture{
   max-height: 300px;
 }
 
-.img_css {
-  background: url(../img/L_Hospitalet_de_Llobregat.webp) no-repeat center;
-  height: 200px;
-  background-size: contain;
-}
-
 /*mobile*/
 @media only screen and (max-width: 480px) {
   .alcaldessa {
@@ -299,6 +293,18 @@ footer li:last-child:after {
 	display: none;
 }
 
+
+.img_css {
+  background-image: url("https://placehold.co/400x200"); /* Placeholder image */
+}
+
+.img_css.visible {
+  background-image: url(../img/L_Hospitalet_de_Llobregat.webp) no-repeat center; /* The final image */
+  height: 200px;
+  background-size: contain;
+}
+
+
 @media (768px < width) {
   nav ul {
     padding: 0;
@@ -336,25 +342,26 @@ footer li:last-child:after {
     max-width: 75%;
     height: auto;
   }
-  .img_css {
+  .img_css.visible {
     width: 800px;
     height: 300px;
   }
 }
+
 @media (992px < width) {
-  .img_css {
+  .img_css.visible {
     width: 1000px;
     height: 400px;
   }
 }
 @media ( 1200px < width) {
-  .img_css {
+  .img_css.visible {
     width: 1300px;
     height: 500px;
   }
 }
 @media (1400px < width) {
-  .img_css {
+  .img_css.visible {
     width: 1500px;
     height: 600px;
   }
