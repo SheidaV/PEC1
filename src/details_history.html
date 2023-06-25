@@ -11,14 +11,15 @@
     <!-- My own CSS & Javascript files -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/lazy.js" async></script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html"><img src="img/logo.svg" alt="Logo" title="L'H">Sitio L'Hospitalet de
+                <h1><a href="index.html"><img src="img/logo.svg" alt="Logo" title="L'H" loading="lazy">Sitio
+                        L'Hospitalet de
                         Llobregat</a></h1>
             </div>
             <nav class="nav">
@@ -39,7 +40,8 @@
             <picture>
                 <source media="(max-width: 799px)" srcset="img/400wSmallerPanorámicaLH1950.jpg">
                 <source media="(min-width: 800px)" srcset="img/800wPanorámicaLH1950.jpg">
-                <img src="img/800wPanorámicaLH1950.jpg" alt="Vista panoramica Hospitalet de Llobregat antes">
+                <img src="img/800wPanorámicaLH1950.jpg" alt="Vista panoramica Hospitalet de Llobregat antes"
+                    loading="lazy">
                 <figcaption>Hospitalet de Llobregat, año 1950</figcaption>
             </picture>
             <h3 id="site1">Antigüedad y Edad Media</h3>
@@ -118,7 +120,8 @@
                 <li><a href="links.html">Enlaces</a></li>
             </ul>
             <div class="logo">
-                <p><a href="index.html"><img src="img/logo-white.svg" alt="Logo blanco" title="L'H">UOC 2023 - Sheida
+                <p><a href="index.html"><img src="img/logo-white.svg" alt="Logo blanco" title="L'H" loading="lazy">UOC
+                        2023 - Sheida
                         Alfaro</a></p>
             </div>
         </div>

@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="" async></script>
 
     <!-- My own CSS & Javascript files -->
     <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js" async></script>
+    <script type="module" src="js/lazy.js" async></script>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -25,7 +26,8 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html"><img src="img/logo.svg" alt="Logo" title="L'H">Sitio L'Hospitalet de
+                <h1><a href="index.html"><img src="img/logo.svg" alt="Logo" title="L'H" loading="lazy">Sitio
+                        L'Hospitalet de
                         Llobregat</a></h1>
             </div>
             <nav class="nav">
@@ -64,7 +66,7 @@
 
             <figure id="bandera" style="overflow: hidden;">
                 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="500" height="400"
-                    id="svg2" version="1.0">
+                    id="svg2" version="1.0" loading="lazy">
                     <defs id="defs4" />
 
                     <rect x="0" y="0" width="250" height="343.75" class="vibracion" style="fill:#ffffff;" />
@@ -85,7 +87,7 @@
                 <figcaption>Bandera de Hospitalet de Llobregat</figcaption>
             </figure>
             <figure>
-                <div class="alcaldessa"></div>
+                <div class="lazy-background"></div>
                 <figcaption>Alcaldessa reelegida en Hospitalet de Llobregat</figcaption>
             </figure>
 
@@ -104,7 +106,8 @@
                 <li><a href="links.html">Enlaces</a></li>
             </ul>
             <div class="logo">
-                <p><a href="index.html"><img src="img/logo-white.svg" alt="Logo blanco" title="L'H">UOC 2023 - Sheida
+                <p><a href="index.html"><img src="img/logo-white.svg" alt="Logo blanco" title="L'H" loading="lazy">UOC
+                        2023 - Sheida
                         Alfaro</a></p>
             </div>
         </div>

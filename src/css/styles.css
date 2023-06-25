@@ -205,28 +205,11 @@ picture{
   max-height: 300px;
 }
 
-/*mobile*/
-@media only screen and (max-width: 480px) {
-  .alcaldessa {
-    background-image: url(../img/alcaldessa200w.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 300px;
-  }
+.img_css {
+  background: url(../img/L_Hospitalet_de_Llobregat.webp) no-repeat center;
+  height: 200px;
+  background-size: contain;
 }
-
-@media only screen and (min-width: 481px) {
-  .alcaldessa {
-    background-image: url(../img/alcaldessa.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 200px;
-  }
-}
-
-
 
 /* Menú de navegación principal*/
 nav {
@@ -293,17 +276,23 @@ footer li:last-child:after {
 	display: none;
 }
 
+  .lazy-background.visible {
+    background-image: url(../img/alcaldessa200w.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
 
-.img_css {
-  background-image: url("https://placehold.co/400x200"); /* Placeholder image */
+@media only screen and (min-width: 481px) {
+  .lazy-background.visible {
+    background-image: url(../img/alcaldessa.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+  }
 }
-
-.img_css.visible {
-  background-image: url(../img/L_Hospitalet_de_Llobregat.webp) no-repeat center; /* The final image */
-  height: 200px;
-  background-size: contain;
-}
-
 
 @media (768px < width) {
   nav ul {
@@ -342,26 +331,26 @@ footer li:last-child:after {
     max-width: 75%;
     height: auto;
   }
-  .img_css.visible {
+  .img_css {
     width: 800px;
     height: 300px;
   }
 }
 
 @media (992px < width) {
-  .img_css.visible {
+  .img_css {
     width: 1000px;
     height: 400px;
   }
 }
 @media ( 1200px < width) {
-  .img_css.visible {
+  .img_css {
     width: 1300px;
     height: 500px;
   }
 }
 @media (1400px < width) {
-  .img_css.visible {
+  .img_css {
     width: 1500px;
     height: 600px;
   }
