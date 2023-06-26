@@ -3,10 +3,10 @@
   --text-color: rgb(75, 75, 75);
   --light-color: rgb(255, 255, 255);
   --background-color: #FFF2F2;
-  --background-color2: rgb(98, 88, 147);
-  --background-color3: rgba(216,209,255,0.886);
-  --contrast-color: #4399e5;
-  --secondary-contrast-color: rgb(101, 124, 187);
+  --background-color2: #595086;
+  --background-color3: #cfc7ff;
+  --contrast-color: #367ab5;
+  --secondary-contrast-color: #475680;
   --note-color: rgba(237, 234, 252, 0.886);
   --note-contrast-color: hsla(250, 100%, 60%, 0.886);
 }
@@ -55,7 +55,7 @@ main {
 
 main p, main li, dl {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   text-align: justify;
 }
@@ -208,6 +208,7 @@ picture{
 .img_css {
   background: url(../img/L_Hospitalet_de_Llobregat.webp) no-repeat center;
   height: 200px;
+  width: auto;
   background-size: contain;
 }
 
@@ -218,6 +219,8 @@ nav {
   height: 10%;
 }
 nav a, nav span {
+  min-width: 48px; 
+  min-height: 48px; 
   display: inline-block;
   font-size: 1.35rem;
   height: 2.4rem;
@@ -276,6 +279,12 @@ footer li:last-child:after {
 	display: none;
 }
 
+.lazy-background {
+  background-image: url(https://placehold.co/300x800);
+  height: 300px;
+  width: 100%;
+}
+
   .lazy-background.visible {
     background-image: url(../img/alcaldessa200w.jpg);
     background-size: cover;
@@ -310,7 +319,7 @@ footer li:last-child:after {
 
   nav a, nav span {
     display: inline-block;
-    font-size: 2.25rem;
+    font-size: 2.35rem;
     height: 3rem;
     line-height: 1.7;
     text-decoration: none;
